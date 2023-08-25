@@ -16,6 +16,11 @@
 		F21AE13E2A98D2D80045D7C7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21AE13D2A98D2D80045D7C7 /* Product.swift */; };
 		F21AE1402A98D2E90045D7C7 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21AE13F2A98D2E90045D7C7 /* ProductDetail.swift */; };
 		F21AE1422A98D3EE0045D7C7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21AE1412A98D3EE0045D7C7 /* NetworkManager.swift */; };
+		F29868012A98D67B00E5DBED /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29868002A98D67B00E5DBED /* Coordinator.swift */; };
+		F29868042A98D6B000E5DBED /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29868032A98D6B000E5DBED /* AppCoordinator.swift */; };
+		F29868062A98D6B700E5DBED /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29868052A98D6B700E5DBED /* MainCoordinator.swift */; };
+		F298680A2A98D73000E5DBED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29868092A98D73000E5DBED /* DetailViewController.swift */; };
+		F298680C2A98D74100E5DBED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298680B2A98D74100E5DBED /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		F21AE13D2A98D2D80045D7C7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F21AE13F2A98D2E90045D7C7 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		F21AE1412A98D3EE0045D7C7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F29868002A98D67B00E5DBED /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F29868032A98D6B000E5DBED /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F29868052A98D6B700E5DBED /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F29868092A98D73000E5DBED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F298680B2A98D74100E5DBED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,8 @@
 		F21AE1232A98D2830045D7C7 /* avitoTestTask_ShapovalovA */ = {
 			isa = PBXGroup;
 			children = (
+				F29868022A98D6A400E5DBED /* Coordinators */,
+				F29867FF2A98D67000E5DBED /* Protocols */,
 				F21AE13C2A98D2C30045D7C7 /* Controllers */,
 				F21AE13B2A98D2BC0045D7C7 /* Network */,
 				F21AE13A2A98D2B70045D7C7 /* Views */,
@@ -112,8 +124,27 @@
 		F21AE13C2A98D2C30045D7C7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F298680B2A98D74100E5DBED /* MainViewController.swift */,
+				F29868092A98D73000E5DBED /* DetailViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F29867FF2A98D67000E5DBED /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F29868002A98D67B00E5DBED /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F29868022A98D6A400E5DBED /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F29868032A98D6B000E5DBED /* AppCoordinator.swift */,
+				F29868052A98D6B700E5DBED /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,12 +218,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F298680A2A98D73000E5DBED /* DetailViewController.swift in Sources */,
+				F298680C2A98D74100E5DBED /* MainViewController.swift in Sources */,
 				F21AE1422A98D3EE0045D7C7 /* NetworkManager.swift in Sources */,
 				F21AE1292A98D2830045D7C7 /* ViewController.swift in Sources */,
 				F21AE1402A98D2E90045D7C7 /* ProductDetail.swift in Sources */,
 				F21AE13E2A98D2D80045D7C7 /* Product.swift in Sources */,
+				F29868042A98D6B000E5DBED /* AppCoordinator.swift in Sources */,
 				F21AE1252A98D2830045D7C7 /* AppDelegate.swift in Sources */,
 				F21AE1272A98D2830045D7C7 /* SceneDelegate.swift in Sources */,
+				F29868062A98D6B700E5DBED /* MainCoordinator.swift in Sources */,
+				F29868012A98D67B00E5DBED /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
